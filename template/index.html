@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Seizure Detection</title> 
+ <style>
+    /* Set body background color to dark blue */
+    body {
+        background: url('bg.png');
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+
+        background-color: #000000;
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    }
+    /* Set h1 font color to white and font size to 36px */
+    h1 {
+        color: white;
+        font-size: 36px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    /* Style file input element */
+    input[type="file"] {
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 10px;
+        background-color: palevioletred;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+    }
+    /* Style predict button */
+    button[type="submit"] {
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 10px;
+        background-color: palevioletred;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+    /* Set file label font color to white and font size to 24px */
+    label {
+        color: white;
+        font-size: 24px;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+      /* Add hover effect */
+  button:hover {
+    background-color: #555;
+    color: white;
+  }
+</style>
+</head>
+<body>
+    <h1>Seizure Detection</h1>
+    <form method="post" action="/predict" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html> 
+
+

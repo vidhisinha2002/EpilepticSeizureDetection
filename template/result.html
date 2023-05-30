@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			font-family: Arial, sans-serif;
+		}
+		
+		h1 {
+			color:white;
+			font-size: 48px;
+			text-align: center;
+			text-shadow: 2px 2px #000;
+		}
+		
+		p {
+			font-size: 24px;
+			margin: 20px;
+			text-align: center;
+			border: 2px solid black;
+
+		}
+		div{
+			outline: palevioletred solid 10px;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+		}
+		
+		
+		
+	</style>
+</head>
+<body>
+	<h1 class="seizure">Result</h1>
+	<div>
+	<p>SVM Accuracy: {{accuracy}}</p>
+	<p>LSTM Accuracy: {{ accuracy1 }}</p>
+	<p>RNN Accuracy: {{ accuracy2 }}</p>
+	<p>CNN-RNN Accuracy: {{ accuracy3 }}</p>
+</div>
+</body>
+</html> 
+
